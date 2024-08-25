@@ -1,7 +1,58 @@
-<div class="gallery-container">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    .gallery img {
+      width: 150px;
+      margin: 10px;
+      border: 2px solid #000;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #copyUrl {
+      display: none;
+      color: white;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: #333;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="gallery">
   {% for image in site.static_files %}
     {% if image.path contains '/assets/images/gallery/' %}
-      <img src="{{ image.path | relative_url }}" alt="{{ image.name }}" onclick="openModal(this)">
+      <img src="{{ image.path | relative_url }}" alt="{{ image.name }}" onclick="copyToClipboard(this.src)">
     {% endif %}
   {% endfor %}
 </div>
+
+<!-- URL Copy Feedback -->
+<div id="copyUrl">URL copied to clipboard!</div>
+
+<script>
+function copyToClipboard(text) {
+  var dummy = document.createElement("input");
+  document.body.appendChild(dummy);
+  dummy.setAttribute("value", text);
+  dummy.select();
+  document.execCommand("copy");
+  document.body.removeChild(dummy);
+  
+  var copyAlert = document.getElementById("copyUrl");
+  copyAlert.style.display = "block";
+  setTimeout(function() {
+    copyAlert.style.display = "none";
+  }, 2000);
+}
+</script>
+
+</body>
+</html>
