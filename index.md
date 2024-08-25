@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -61,8 +60,8 @@
 
 <div class="gallery">
   {% for image in site.static_files %}
-    {% if image.path contains '../assets/images/gallery/' %}
-      <img src="{{ image.path }}" alt="{{ image.name }}" onclick="openModal(this)">
+    {% if image.path contains '/assets/images/gallery/' %}
+      <img src="{{ image.path | relative_url }}" alt="{{ image.name }}" onclick="openModal(this)">
     {% endif %}
   {% endfor %}
 </div>
