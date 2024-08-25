@@ -61,7 +61,7 @@
 
 <div class="gallery">
   {% for image in site.static_files %}
-    {% if image.path contains 'assets/images/gallery/' %}
+    {% if image.path contains '../assets/images/gallery/' %}
       <img src="{{ image.path }}" alt="{{ image.name }}" onclick="openModal(this)">
     {% endif %}
   {% endfor %}
