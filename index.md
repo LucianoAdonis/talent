@@ -3,4 +3,4 @@
 - [Series](./pages/series).
 - [Movie Reference](./pages/movie).
 - [Templates](./pages/templates).
-- Simpsons.
+- [Simpsons](./pages/simpsons).
