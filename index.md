@@ -1,5 +1,6 @@
 
 - Tech.
+- [Series](./pages/series).
 - [Movie Reference](./pages/movie).
 - [Templates](./pages/templates).
 - Simpsons.
