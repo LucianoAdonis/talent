@@ -1,7 +1,5 @@
-<div class="gallery-container">
-  {% for image in site.static_files %}
-    {% if image.path contains '/assets/images/gallery/' %}
-      <img src="{{ image.path | relative_url }}" alt="{{ image.name }}" onclick="openModal(this)">
-    {% endif %}
-  {% endfor %}
-</div>
+
+- Tech.
+- [Movie Reference](./pages/movie-reference).
+- [Templates](./pages/Templates).
+- Simpsons.
