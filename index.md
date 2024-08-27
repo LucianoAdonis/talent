@@ -9,7 +9,7 @@ description: Library of Talent Memes
     <div class="text-container">
       <h2>Talent Memes</h2>
       <p>
-        Fly me to the moon.
+        Self-Deprecating Humor.
       </p>
       <a href="pages/talent" class="cta-button">Learn More</a>
     </div>
@@ -49,8 +49,11 @@ description: Library of Talent Memes
       <img src="assets/images/simpsons-dignity.png" alt="Descriptive Alt Text">
     </div>   
   </div>
+</section>
 
-  <div class="text-container">
+<section class="image-text-section">
+  <div class="container">
+     <div class="text-container">
       <h2>Simpsons</h2>
       <p>
         Millennial Test.
@@ -59,7 +62,8 @@ description: Library of Talent Memes
     </div>
     <div class="image-container">
       <img src="assets/images/simpsons-dignity.png" alt="Descriptive Alt Text">
-    </div> 
+    </div>   
+  </div>
 </section>
 
 

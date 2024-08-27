@@ -11,3 +11,15 @@ description: Whatever is not an anime
     {% endif %}
   {% endfor %}
 </div>
+
+.custom-image {
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
