@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Series
+description: Whatever is not an anime
+---
+
 <div class="gallery-container">
   {% for image in site.static_files %}
     {% if image.path contains '/assets/images/series/' %}

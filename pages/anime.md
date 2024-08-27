@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Anime
+description: 
+---
+
 <div class="gallery-container">
   {% for image in site.static_files %}
     {% if image.path contains '/assets/images/anime/' %}

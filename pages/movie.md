@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Movie
+description: 
+---
+
 <div class="gallery-container">
   {% for image in site.static_files %}
     {% if image.path contains '/assets/images/movie-reference/' %}

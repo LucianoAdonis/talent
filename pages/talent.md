@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Talent
+description: There's no War in Talent
+---
+
 <div class="gallery-container">
   {% for image in site.static_files %}
     {% if image.path contains '/assets/images/talent/' %}

@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Templates
+description: Making memes with high quality
+---
+
 <div class="gallery-container">
   {% for image in site.static_files %}
     {% if image.path contains '/assets/images/templates/' %}
