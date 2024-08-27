@@ -34,4 +34,3 @@ description: Extra Points in Retrospectives and Feedback for each Simpson Refere
     }, 2000);
   }
 </script>
-
