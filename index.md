@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom
 title: Meme Delivery Platform
 description: Library of Talent Memes
 ---
