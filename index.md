@@ -51,19 +51,3 @@ description: Library of Talent Memes
   </div>
 </section>
 
-<section class="image-text-section">
-  <div class="container">
-     <div class="text-container">
-      <h2>Simpsons</h2>
-      <p>
-        Millennial Test.
-      </p>
-      <a href="pages/simpsons" class="cta-button">Learn More</a>
-    </div>
-    <div class="image-container">
-      <img src="assets/images/simpsons-dignity.png" alt="Descriptive Alt Text">
-    </div>   
-  </div>
-</section>
-
-
